@@ -2,7 +2,6 @@ package com.bridgelabz.employeepayrollapp.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.ToString;
-
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 import java.util.List;
