@@ -33,14 +33,4 @@ public @ToString class EmployeeDTO {
     @NotNull(message = "department should not be empty")
     public List<String> department;
 
-
-    public EmployeeDTO(String name, long salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    @Override
-        public String toString() {
-            return "name="+name+":salary="+salary;
-        }
 }
