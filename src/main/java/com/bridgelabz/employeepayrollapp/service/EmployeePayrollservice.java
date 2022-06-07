@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class EmployeePayrollservice implements IEmployeePayrollService{
 
-    private List<EmployeePayrollData> employeePayrollList=new ArrayList();
+    private List<EmployeePayrollData> employeePayrollList = new ArrayList();
 
     @Override
     public List<EmployeePayrollData> getEmployeePayrollData(){
@@ -19,6 +19,7 @@ public class EmployeePayrollservice implements IEmployeePayrollService{
 
     @Override
     public EmployeePayrollData getEmployeePayrollDataById(int empId){
+
         return employeePayrollList.get(empId-1);
     }
 
