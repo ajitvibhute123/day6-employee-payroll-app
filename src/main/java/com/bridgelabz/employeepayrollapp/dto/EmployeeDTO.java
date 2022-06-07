@@ -11,6 +11,7 @@ public class EmployeeDTO {
 
     @NotEmpty(message = "Employee name cannot be null")
     public String name;
+
     @Min(value = 500, message = "Min wage should be more than 500")
     public long salary;
 
