@@ -1,7 +1,12 @@
 package com.bridgelabz.employeepayrollapp.exception;
 
 import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
+
+import ch.qos.logback.classic.Logger;
 import lombok.extern.slf4j.Slf4j;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -18,10 +23,11 @@ import java.util.stream.Collectors;
 public class EmployeePayrollExceptionHandler {
 
     private static final String message = "Exception While processing REST Request";
+ 
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<ResponseDTO> handleHttpMessageNotReadableException(HttpMessageNotReadableException exception){
-        log.error("invalid date format",exception);
+//        log.error("invalid date format",exception);
         ResponseDTO responseDTO = new ResponseDTO(message,"Should have date in the format dd MM yyyy");
         return new ResponseEntity<>(responseDTO,HttpStatus.BAD_REQUEST);
     }

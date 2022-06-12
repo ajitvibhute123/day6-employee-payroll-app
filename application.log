@@ -1,0 +1,28 @@
+2022-06-12 23:56:37.674  INFO 12384 --- [restartedMain] c.b.e.EmployePayrollAppApplication       : Starting EmployePayrollAppApplication using Java 17.0.2 on DESKTOP-F5EDT75 with PID 12384 (C:\Users\Ajit Vibhute\eclipse-workspace-web\day6-employee-payroll-app\target\classes started by Ajit Vibhute in C:\Users\Ajit Vibhute\eclipse-workspace-web\day6-employee-payroll-app)
+2022-06-12 23:56:37.701 DEBUG 12384 --- [restartedMain] c.b.e.EmployePayrollAppApplication       : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-06-12 23:56:37.703  INFO 12384 --- [restartedMain] c.b.e.EmployePayrollAppApplication       : The following 1 profile is active: "dev"
+2022-06-12 23:57:07.331  WARN 12384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 23:57:08.383  WARN 12384 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 23:57:09.502  WARN 12384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-06-12 23:57:09.605  WARN 12384 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-06-12 23:57:09.910 ERROR 12384 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-06-12 23:58:13.883  INFO 3712 --- [restartedMain] c.b.e.EmployePayrollAppApplication       : Starting EmployePayrollAppApplication using Java 17.0.2 on DESKTOP-F5EDT75 with PID 3712 (C:\Users\Ajit Vibhute\eclipse-workspace-web\day6-employee-payroll-app\target\classes started by Ajit Vibhute in C:\Users\Ajit Vibhute\eclipse-workspace-web\day6-employee-payroll-app)
+2022-06-12 23:58:13.893 DEBUG 3712 --- [restartedMain] c.b.e.EmployePayrollAppApplication       : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-06-12 23:58:13.896  INFO 3712 --- [restartedMain] c.b.e.EmployePayrollAppApplication       : The following 1 profile is active: "dev"
+2022-06-12 23:58:47.314  WARN 3712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 23:58:48.913  WARN 3712 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 23:58:49.419  WARN 3712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-06-12 23:58:50.098  INFO 3712 --- [restartedMain] c.b.e.EmployePayrollAppApplication       : Started EmployePayrollAppApplication in 37.982 seconds (JVM running for 41.468)
