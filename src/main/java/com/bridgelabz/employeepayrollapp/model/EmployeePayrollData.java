@@ -20,7 +20,7 @@ public @Data @NoArgsConstructor class EmployeePayrollData {
     private String name;
     private long salary;
     private String gender;
-    private LocalDate startDate;
+    private String startDate;
     private String note;
     private String profilePic;
 
@@ -34,6 +34,8 @@ public @Data @NoArgsConstructor class EmployeePayrollData {
     public EmployeePayrollData(EmployeeDTO empPayrollDTO) {
         this.updateEmployeePayrollData(empPayrollDTO);
     }
+    
+    public EmployeePayrollData() {}
 
     public void updateEmployeePayrollData(EmployeeDTO empPayrollDTO) {
         this.name = empPayrollDTO.name;
